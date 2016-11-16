@@ -10,8 +10,8 @@ require_once('./config.php');
 // $customer->keys();
   $charge = \Stripe\Charge::create(array(
       'customer' => $customer->id,
-      'amount'   => 5000,
-      'currency' => 'usd'
+      'amount'   => 2000,
+      'currency' => 'eur'
   ));
 
-  echo '<h1>Successfully charged $50.00!</h1>';
+  echo '<h1>Paiment de 20€ accepté</h1>';
